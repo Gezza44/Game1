@@ -7,26 +7,26 @@ var timer = 0;
 
 
 var speed1 = Math.random()*4;
-var speed2 = Math.random()*4;
-var speed3 = Math.random()*4;
-var speed4 = Math.random()*4;
-var speed5 = Math.random()*4;
-var speed6 = Math.random()*4;
-var speed7 = Math.random()*4;
-var speed8 = Math.random()*4;
-var speed9 = Math.random()*4;
-var speed10 = Math.random()*4;
-
 var enemies1 = [];
+var speed2 = Math.random()*4;
 var enemies2 = [];
+var speed3 = Math.random()*4;
 var enemies3 = [];
+var speed4 = Math.random()*4;
 var enemies4 = [];
+var speed5 = Math.random()*4;
 var enemies5 = [];
+var speed6 = Math.random()*4;
 var enemies6 = [];
+var speed7 = Math.random()*4;
 var enemies7 = [];
+var speed8 = Math.random()*4;
 var enemies8 = [];
+var speed9 = Math.random()*4;
 var enemies9 = [];
+var speed10 = Math.random()*4;
 var enemies10 = [];
+
 
 
 
