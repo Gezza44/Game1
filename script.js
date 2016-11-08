@@ -7,27 +7,27 @@ var timer = 0;
 
 
 var speed1 = Math.random()*4;
-var enemies1 = [];
 var speed2 = Math.random()*4;
-var enemies2 = [];
 var speed3 = Math.random()*4;
-var enemies3 = [];
 var speed4 = Math.random()*4;
-var enemies4 = [];
 var speed5 = Math.random()*4;
-var enemies5 = [];
 var speed6 = Math.random()*4;
-var enemies6 = [];
 var speed7 = Math.random()*4;
-var enemies7 = [];
 var speed8 = Math.random()*4;
-var enemies8 = [];
 var speed9 = Math.random()*4;
-var enemies9 = [];
 var speed10 = Math.random()*4;
+
+
+var enemies1 = [];
+var enemies2 = [];
+var enemies3 = [];
+var enemies4 = [];
+var enemies5 = [];
+var enemies6 = [];
+var enemies7 = [];
+var enemies8 = [];
+var enemies9 = [];
 var enemies10 = [];
-
-
 
 
   enemies1.push({x:0, y:Math.random()*canvas.height});
@@ -49,16 +49,16 @@ var enemies10 = [];
 
 window.setInterval(function(){  
 
-ctx.enemies1.push({x:+speed1, y:enemies1.y});
- ctx.enemies2.push({x:+speed2, y:enemies2.y});
-  ctx.enemies3.push({x:+speed3, y:enemies3.y});
-  ctx.enemies4.push({x:+speed4, y:enemies4.y});
-ctx.enemies5.push({x:+speed5, y:enemies5.y});
-  ctx.enemies6.push({x:+speed6, y:enemies6.y});
-  ctx.enemies7.push({x:+speed7, y:enemies7.y});
- ctx.enemies8.push({x:+speed8, y:enemies8.y});
- ctx.enemies9.push({x:+speed9, y:enemies9.y});
- ctx.enemies10.push({x:+speed10, y:enemies10.y});
+ctx.enemies1({x:+speed1, y:enemies1.y});
+ ctx.enemies2({x:+speed2, y:enemies2.y});
+  ctx.enemies3({x:+speed3, y:enemies3.y});
+  ctx.enemies4({x:+speed4, y:enemies4.y});
+ctx.enemies5({x:+speed5, y:enemies5.y});
+  ctx.enemies6({x:+speed6, y:enemies6.y});
+  ctx.enemies7({x:+speed7, y:enemies7.y});
+ ctx.enemies8({x:+speed8, y:enemies8.y});
+ ctx.enemies9({x:+speed9, y:enemies9.y});
+ ctx.enemies10({x:+speed10, y:enemies10.y});
 
 //what does ctx mean
   //do I need .push
