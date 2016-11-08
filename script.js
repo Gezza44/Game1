@@ -7,7 +7,7 @@ var timer = 0;
 
 var enemies = [];
 for (var i=0; i<10; i++) {
-  enemies.push({x:0, y:Math.random()*canvas.width});
+  enemies.push({x:0, y:Math.random()*canvas.height});
 }
 
 
@@ -17,7 +17,7 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
   for (var i=0; i<10; i++) {
-  enemies[i].x += 1;
+  enemies[i].x += math.random()*4;
 }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "red";
