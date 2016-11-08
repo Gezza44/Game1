@@ -67,7 +67,7 @@ window.setInterval(function(){
   for (var i=0; i<enemies.length; i++) {
     ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
   }
-}, 1000/60);
+, 1000/60);
   
 
 canvas.addEventListener('mousemove', function(evt) {
