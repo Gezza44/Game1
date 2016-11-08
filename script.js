@@ -29,7 +29,7 @@ var enemies9 = [];
 var enemies10 = [];
 
 
-for (var i=0; i<10; i++) {
+
   enemies1.push({x:0, y:Math.random()*canvas.height});
   enemies2.push({x:0, y:Math.random()*canvas.height});
   enemies3.push({x:0, y:Math.random()*canvas.height});
@@ -40,7 +40,7 @@ for (var i=0; i<10; i++) {
   enemies8.push({x:0, y:Math.random()*canvas.height});
   enemies9.push({x:0, y:Math.random()*canvas.height});
   enemies10.push({x:0, y:Math.random()*canvas.height});
-}
+
 
 
   ctx.font = "30px Arial";
@@ -48,18 +48,18 @@ for (var i=0; i<10; i++) {
 
 
 window.setInterval(function(){  
-  for (var i=0; i<10; i++) {
-  enemies1[i].x += speed1;
-  enemies2[i].x += speed2;
-  enemies3[i].x += speed3;
-  enemies4[i].x += speed4;
-  enemies5[i].x += speed5;
-  enemies6[i].x += speed6;
-  enemies7[i].x += speed7;
-  enemies8[i].x += speed8;
-  enemies9[i].x += speed9;
-  enemies10[i].x += speed10;  
-};
+ 
+  enemies1.x += speed1;
+  enemies2.x += speed2;
+  enemies3.x += speed3;
+  enemies4.x += speed4;
+  enemies5.x += speed5;
+  enemies6.x += speed6;
+  enemies7.x += speed7;
+  enemies8.x += speed8;
+  enemies9.x += speed9;
+  enemies10.x += speed10;  
+
 
  
   
