@@ -1,105 +1,93 @@
-
 var text= document.getElementById("text");
+
 var canvas = document.getElementById("myCanvas");
+
 var ctx = canvas.getContext("2d");
+
 var mousePos = {x:360, y:-240};
+
 var timer = 0;
 
 
-var speed1 = Math.random()*4;
-var speed2 = Math.random()*4;
-var speed3 = Math.random()*4;
-var speed4 = Math.random()*4;
-var speed5 = Math.random()*4;
-var speed6 = Math.random()*4;
-var speed7 = Math.random()*4;
-var speed8 = Math.random()*4;
-var speed9 = Math.random()*4;
-var speed10 = Math.random()*4;
 
 
-var enemies1 = [i];
-var enemies2 = [i];
-var enemies3 = [i];
-var enemies4 = [i];
-var enemies5 = [i];
-var enemies6 = [i];
-var enemies7 = [i];
-var enemies8 = [i];
-var enemies9 = [i];
-var enemies10 = [i];
+var enemies = [];
 
+for (var i=0; i<10; i++) {
 
-  enemies1[i].push({x:0, y:Math.random()*canvas.height});
-  enemies2[i].push({x:0, y:Math.random()*canvas.height});
-  enemies3[i].push({x:0, y:Math.random()*canvas.height});
-  enemies4[i].push({x:0, y:Math.random()*canvas.height});
-  enemies5[i].push({x:0, y:Math.random()*canvas.height});
-  enemies6[i].push({x:0, y:Math.random()*canvas.height});
-  enemies7[i].push({x:0, y:Math.random()*canvas.height});
-  enemies8[i].push({x:0, y:Math.random()*canvas.height});
-  enemies9[i].push({x:0, y:Math.random()*canvas.height});
-  enemies10[i].push({x:0, y:Math.random()*canvas.height});
+  enemies.push({x:0, y:Math.random()*canvas.height});
+
+}
 
 
 
-  ctx.font = "30px Arial";
-  ctx.textAlign = "right";
+
+
+
+
+// var button = {x:20, y:30, w:80, h:40}; see line 26
+
+ctx.font = "30px Arial";
+
+ctx.textAlign = "right";
+
+
 
 
 window.setInterval(function(){  
 
-enemies1[i]({x:+speed1, y:enemies1.y});
-enemies2[i]({x:+speed2, y:enemies2.y});
- enemies3[i]({x:+speed3, y:enemies3.y});
- enemies4[i]({x:+speed4, y:enemies4.y});
-enemies5[i]({x:+speed5, y:enemies5.y});
-  enemies6[i]({x:+speed6, y:enemies6.y});
-  enemies7[i]({x:+speed7, y:enemies7.y});
- enemies8[i]({x:+speed8, y:enemies8.y});
- enemies9[i]({x:+speed9, y:enemies9.y});
-enemies10[i]({x:+speed10, y:enemies10.y});
+  for (var i=0; i<10; i++) {
 
-//what does ctx mean
-  //do I need .push
-  // ?
- 
-  
+  enemies[i].x += math.random()*4;
 
-  
+}
+
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "red";
-  ctx.fillRect(mousePos.x-10,mousePos.y-10,20,20);
-  ctx.fillStyle = "black";
-  ctx.fillText(Math.round(timer), canvas.width - 10, 30 );
-  timer += 1/60;
-  
-  
-  ctx.fillStyle = "green";
- 
-  ctx.fillRect(enemies1[i].x,enemies1[i].y,20,20);
-  ctx.fillRect(enemies2[i].x,enemies2[i].y,20,20);
-  ctx.fillRect(enemies3[i].x,enemies3[i].y,20,20);
-  ctx.fillRect(enemies4[i].x,enemies4[i].y,20,20);
-  ctx.fillRect(enemies5[i].x,enemies5[i].y,20,20);
-  ctx.fillRect(enemies6[i].x,enemies6[i].y,20,20);
-  ctx.fillRect(enemies7[i].x,enemies7[i].y,20,20);
-  ctx.fillRect(enemies8[i].x,enemies8[i].y,20,20);
-  ctx.fillRect(enemies9[i].x,enemies9[i].y,20,20);
-  ctx.fillRect(enemies10[i].x,enemies10[i].y,20,20);
 
- 
-}, 1000/60);
+  ctx.fillStyle = "red";
+
+  ctx.fillRect(mousePos.x-10,mousePos.y-10,20,20);
+
+  // ctx.fillRect(button.x,button.y, button.w, button.h);
+
+  ctx.fillStyle = "black";
+
+  ctx.fillText(Math.round(timer), canvas.width - 10, 30 );
+
+  timer += 1/60;
+
   
+
+  
+
+  ctx.fillStyle = "green";
+
+  for (var i=0; i<enemies.length; i++) {
+
+    ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
+
+  }
+
+}, 1000/60);
+
+  
+
+
+
 
 canvas.addEventListener('mousemove', function(evt) {
+
   var rect = canvas.getBoundingClientRect(); 
+
   mousePos = {
+
     x: evt.clientX - rect.left,
+
     y: evt.clientY - rect.top
+
   };
-}, false); 
-// what does this mean ^
+
+}, false )
 
 
 
