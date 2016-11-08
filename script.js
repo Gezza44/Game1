@@ -7,7 +7,7 @@ var timer = 0;
 
 var enemies = [];
 for (var i=0; i<10; i++) {
-  enemies.push({x:Math.random()*100, y:Math.random()*100});
+  enemies.push({x:0, y:Math.random()*canvas.width});
 }
 
 
