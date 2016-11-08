@@ -48,8 +48,8 @@ window.setInterval(function(){
   enemies8[i].x += speed8;
   enemies9[i].x += speed9;
   enemies10[i].x += speed10;  
-}
-  });
+};
+
  
   
 
@@ -67,7 +67,7 @@ window.setInterval(function(){
   for (var i=0; i<enemies.length; i++) {
     ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
   }
-1000/60);
+}, 1000/60);
   
 
 canvas.addEventListener('mousemove', function(evt) {
