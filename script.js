@@ -12,10 +12,11 @@ var timer = 0;
 
 
 var enemies = [];
-
-
+ {
 
   enemies.push({x:0, y:Math.random()*canvas.height});
+
+}
 
 
 
@@ -34,11 +35,11 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
 
-  
+  {
 
-  enemies.x += Math.random()*4;
+  enemies[i].x += math.random()*4;
 
-
+}
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -60,11 +61,11 @@ window.setInterval(function(){
 
   ctx.fillStyle = "green";
 
-  
+{
 
-    ctx.fillRect(enemies.x,enemies.y,20,20);
+    ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
 
- 
+  }
 
 }, 1000/60);
 
@@ -86,9 +87,3 @@ canvas.addEventListener('mousemove', function(evt) {
   };
 
 }, false )
-
-
-
-
-
-
