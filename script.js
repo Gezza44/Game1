@@ -38,7 +38,7 @@ window.setInterval(function(){
 
   
 
-  enemies.x += math.random()*4;
+  enemies.x += Math.random()*4;
 
 
 
