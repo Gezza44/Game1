@@ -4,7 +4,7 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var mousePos = {x:360, y:-240};
 var timer = 0;
-
+var speed = Math.random()*4;
 var enemies = [];
 for (var i=0; i<10; i++) {
   enemies.push({x:0, y:Math.random()*canvas.height});
@@ -17,7 +17,7 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
   for (var i=0; i<10; i++) {
-  enemies[i].x += Math.random()*4;
+  enemies[i].x += speed;
 }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "red";
