@@ -18,16 +18,16 @@ var speed9 = Math.random()*4;
 var speed10 = Math.random()*4;
 
 
-var enemies1 = [];
-var enemies2 = [];
-var enemies3 = [];
-var enemies4 = [];
-var enemies5 = [];
-var enemies6 = [];
-var enemies7 = [];
-var enemies8 = [];
-var enemies9 = [];
-var enemies10 = [];
+var enemies1 = [i];
+var enemies2 = [i];
+var enemies3 = [i];
+var enemies4 = [i];
+var enemies5 = [i];
+var enemies6 = [i];
+var enemies7 = [i];
+var enemies8 = [i];
+var enemies9 = [i];
+var enemies10 = [i];
 
 
   enemies1[i].push({x:0, y:Math.random()*canvas.height});
