@@ -48,7 +48,7 @@ window.setInterval(function(){
   enemies9[i].x += speed9;
   enemies10[i].x += speed10;  
 }
-  }
+  });
  
   
   ctx.font = "30px Arial";
