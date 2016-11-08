@@ -30,16 +30,16 @@ var enemies9 = [];
 var enemies10 = [];
 
 
-  enemies1.push({x:0, y:Math.random()*canvas.height});
-  enemies2.push({x:0, y:Math.random()*canvas.height});
-  enemies3.push({x:0, y:Math.random()*canvas.height});
-  enemies4.push({x:0, y:Math.random()*canvas.height});
-  enemies5.push({x:0, y:Math.random()*canvas.height});
-  enemies6.push({x:0, y:Math.random()*canvas.height});
-  enemies7.push({x:0, y:Math.random()*canvas.height});
-  enemies8.push({x:0, y:Math.random()*canvas.height});
-  enemies9.push({x:0, y:Math.random()*canvas.height});
-  enemies10.push({x:0, y:Math.random()*canvas.height});
+  enemies1[i].push({x:0, y:Math.random()*canvas.height});
+  enemies2[i].push({x:0, y:Math.random()*canvas.height});
+  enemies3[i].push({x:0, y:Math.random()*canvas.height});
+  enemies4[i].push({x:0, y:Math.random()*canvas.height});
+  enemies5[i].push({x:0, y:Math.random()*canvas.height});
+  enemies6[i].push({x:0, y:Math.random()*canvas.height});
+  enemies7[i].push({x:0, y:Math.random()*canvas.height});
+  enemies8[i].push({x:0, y:Math.random()*canvas.height});
+  enemies9[i].push({x:0, y:Math.random()*canvas.height});
+  enemies10[i].push({x:0, y:Math.random()*canvas.height});
 
 
 
@@ -49,16 +49,16 @@ var enemies10 = [];
 
 window.setInterval(function(){  
 
-enemies1({x:+speed1, y:enemies1.y});
-enemies2({x:+speed2, y:enemies2.y});
- enemies3({x:+speed3, y:enemies3.y});
- enemies4({x:+speed4, y:enemies4.y});
-enemies5({x:+speed5, y:enemies5.y});
-  enemies6({x:+speed6, y:enemies6.y});
-  enemies7({x:+speed7, y:enemies7.y});
- enemies8({x:+speed8, y:enemies8.y});
- enemies9({x:+speed9, y:enemies9.y});
-enemies10({x:+speed10, y:enemies10.y});
+enemies1[i]({x:+speed1, y:enemies1.y});
+enemies2[i]({x:+speed2, y:enemies2.y});
+ enemies3[i]({x:+speed3, y:enemies3.y});
+ enemies4[i]({x:+speed4, y:enemies4.y});
+enemies5[i]({x:+speed5, y:enemies5.y});
+  enemies6[i]({x:+speed6, y:enemies6.y});
+  enemies7[i]({x:+speed7, y:enemies7.y});
+ enemies8[i]({x:+speed8, y:enemies8.y});
+ enemies9[i]({x:+speed9, y:enemies9.y});
+enemies10[i]({x:+speed10, y:enemies10.y});
 
 //what does ctx mean
   //do I need .push
@@ -77,16 +77,16 @@ enemies10({x:+speed10, y:enemies10.y});
   
   ctx.fillStyle = "green";
  
-  ctx.fillRect(enemies1.x,enemies1.y,20,20);
-  ctx.fillRect(enemies2.x,enemies2.y,20,20);
-  ctx.fillRect(enemies3.x,enemies3.y,20,20);
-  ctx.fillRect(enemies4.x,enemies4.y,20,20);
-  ctx.fillRect(enemies5.x,enemies5.y,20,20);
-  ctx.fillRect(enemies6.x,enemies6.y,20,20);
-  ctx.fillRect(enemies7.x,enemies7.y,20,20);
-  ctx.fillRect(enemies8.x,enemies8.y,20,20);
-  ctx.fillRect(enemies9.x,enemies9.y,20,20);
-  ctx.fillRect(enemies10.x,enemies10.y,20,20);
+  ctx.fillRect(enemies1[i].x,enemies1[i].y,20,20);
+  ctx.fillRect(enemies2[i].x,enemies2[i].y,20,20);
+  ctx.fillRect(enemies3[i].x,enemies3[i].y,20,20);
+  ctx.fillRect(enemies4[i].x,enemies4[i].y,20,20);
+  ctx.fillRect(enemies5[i].x,enemies5[i].y,20,20);
+  ctx.fillRect(enemies6[i].x,enemies6[i].y,20,20);
+  ctx.fillRect(enemies7[i].x,enemies7[i].y,20,20);
+  ctx.fillRect(enemies8[i].x,enemies8[i].y,20,20);
+  ctx.fillRect(enemies9[i].x,enemies9[i].y,20,20);
+  ctx.fillRect(enemies10[i].x,enemies10[i].y,20,20);
 
  
 }, 1000/60);
