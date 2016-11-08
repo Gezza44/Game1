@@ -23,9 +23,10 @@ window.setInterval(function(){
   ctx.fillStyle = "red";
   ctx.fillRect(mousePos.x-10,mousePos.y-10,20,20);
   // ctx.fillRect(button.x,button.y, button.w, button.h);
+  ctx.fillStyle = "black";
   ctx.fillText(Math.round(timer), canvas.width - 10, 30 );
   timer += 1/60;
-
+  
   
   ctx.fillStyle = "green";
   for (var i=0; i<enemies.length; i++) {
@@ -51,5 +52,7 @@ canvas.addEventListener('click', function() {
   }
 } );
 */
+
+
 
 
