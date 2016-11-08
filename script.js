@@ -34,11 +34,11 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
 
-  for (var i=0; i<10; i++) {
+  
 
   enemies[i].x += Math.random()*4;
 
-}
+
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -60,11 +60,11 @@ window.setInterval(function(){
 
   ctx.fillStyle = "green";
 
-  for (var i=0; i<enemies.length; i++) {
+  
 
     ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
 
-  }
+ 
 
 }, 1000/60);
 
