@@ -49,16 +49,16 @@ var enemies10 = [];
 
 window.setInterval(function(){  
  
-  ctx.enemies1.x += speed1;
-  ctx.enemies2.x += speed2;
-  ctx.enemies3.x += speed3;
-  ctx.enemies4.x += speed4;
-  ctx.enemies5.x += speed5;
-  ctx.enemies6.x += speed6;
-  ctx.enemies7.x += speed7;
-  ctx.enemies8.x += speed8;
-  ctx.enemies9.x += speed9;
-  ctx.enemies10.x += speed10;  
+  ctx.enemies1 (x += speed1);
+  ctx.enemies2 (x += speed1);
+  ctx.enemies3 (x += speed1);
+  ctx.enemies4 (x += speed1);
+  ctx.enemies5 (x += speed1);
+  ctx.enemies6 (x += speed1);
+  ctx.enemies7 (x += speed1);
+  ctx.enemies8 (x += speed1);
+  ctx.enemies9 (x += speed1);
+  ctx.enemies10 (x += speed1);
 
 //what does ctx mean
  
