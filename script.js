@@ -17,7 +17,18 @@ var speed8 = Math.random()*4;
 var speed9 = Math.random()*4;
 var speed10 = Math.random()*4;
 
-var enemies = [];
+var enemies1 = [];
+var enemies2 = [];
+var enemies3 = [];
+var enemies4 = [];
+var enemies5 = [];
+var enemies6 = [];
+var enemies7 = [];
+var enemies8 = [];
+var enemies9 = [];
+var enemies10 = [];
+
+
 for (var i=0; i<10; i++) {
   enemies1.push({x:0, y:Math.random()*canvas.height});
   enemies2.push({x:0, y:Math.random()*canvas.height});
@@ -64,9 +75,19 @@ window.setInterval(function(){
   
   
   ctx.fillStyle = "green";
-  for (var i=0; i<enemies.length; i++) {
-    ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
-  }
+ 
+  ctx.fillRect(enemies1.x,enemies1.y,20,20);
+  ctx.fillRect(enemies2.x,enemies2.y,20,20);
+  ctx.fillRect(enemies3.x,enemies3.y,20,20);
+  ctx.fillRect(enemies4.x,enemies4.y,20,20);
+  ctx.fillRect(enemies5.x,enemies5.y,20,20);
+  ctx.fillRect(enemies6.x,enemies6.y,20,20);
+  ctx.fillRect(enemies7.x,enemies7.y,20,20);
+  ctx.fillRect(enemies8.x,enemies8.y,20,20);
+  ctx.fillRect(enemies9.x,enemies9.y,20,20);
+  ctx.fillRect(enemies10.x,enemies10.y,20,20);
+
+ 
 }, 1000/60);
   
 
