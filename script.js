@@ -29,7 +29,7 @@ var enemies9 = [];
 var enemies10 = [];
 
 
-
+function() {
   enemies1.push({x:0, y:Math.random()*canvas.height});
   enemies2.push({x:0, y:Math.random()*canvas.height});
   enemies3.push({x:0, y:Math.random()*canvas.height});
@@ -40,7 +40,7 @@ var enemies10 = [];
   enemies8.push({x:0, y:Math.random()*canvas.height});
   enemies9.push({x:0, y:Math.random()*canvas.height});
   enemies10.push({x:0, y:Math.random()*canvas.height});
-
+}
 
 
   ctx.font = "30px Arial";
@@ -48,7 +48,7 @@ var enemies10 = [];
 
 
 window.setInterval(function(){  
- 
+ function(){
 enemies1.push({x:+speed1, y:enemies1.y});
  enemies2.push({x:+speed2, y:enemies2.y});
   enemies3.push({x:+speed3, y:enemies3.y});
@@ -59,7 +59,7 @@ enemies1.push({x:+speed1, y:enemies1.y});
  enemies8.push({x:+speed8, y:enemies8.y});
  enemies9.push({x:+speed9, y:enemies9.y});
  enemies10.push({x:+speed10, y:enemies10.y});
-
+ }
 //what does ctx mean
   //do I need .push
   // ?
