@@ -76,7 +76,7 @@ canvas.addEventListener('mousemove', function(evt) {
     x: evt.clientX - rect.left,
     y: evt.clientY - rect.top
   };
-}, false) // "}" b4 "," bc chrome told me to
+}, false); // "}" b4 "," bc chrome told me to
 
 /* //Im not using a button, this is a button
 canvas.addEventListener('click', function() {
