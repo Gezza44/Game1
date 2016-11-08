@@ -11,13 +11,13 @@ var timer = 0;
 
 
 
-var enemies = [];
+var enemies
 
-for (var i=0; i<10; i++) {
+
 
   enemies.push({x:0, y:Math.random()*canvas.height});
 
-}
+
 
 
 
@@ -36,11 +36,11 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
 
-  for (var i=0; i<10; i++) {
+  
 
-  enemies[i].x += math.random()*4;
+  enemies.x += math.random()*4;
 
-}
+
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -62,11 +62,10 @@ window.setInterval(function(){
 
   ctx.fillStyle = "green";
 
-  for (var i=0; i<enemies.length; i++) {
+  
 
-    ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
+    ctx.fillRect(enemies.x,enemies.y,20,20);
 
-  }
 
 }, 1000/60);
 
