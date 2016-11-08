@@ -49,7 +49,7 @@ var enemies10 = [];
 
 window.setInterval(function(){  
  
-  ctx.enemies1.push ({x:x+speed1, y:y});
+  ctx.enemies1.push ({x:0, y:Math.random()*canvas.height});
   ctx.enemies2.push ({x:x+speed2, y:y});
   ctx.enemies3.push ({x:x+speed3, y:y});
   ctx.enemies4.push ({x:x+speed4, y:y});
