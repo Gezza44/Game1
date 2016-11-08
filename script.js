@@ -32,7 +32,8 @@ for (var i=0; i<10; i++) {
 }
 
 
-
+  ctx.font = "30px Arial";
+  ctx.textAlign = "right";
 
 
 window.setInterval(function(){  
@@ -51,8 +52,6 @@ window.setInterval(function(){
   });
  
   
-  ctx.font = "30px Arial";
-  ctx.textAlign = "right";
 
   
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -77,7 +76,7 @@ canvas.addEventListener('mousemove', function(evt) {
     x: evt.clientX - rect.left,
     y: evt.clientY - rect.top
   };
-}, false)
+, false) // "}" b4 "," bc chrome told me to
 
 /* //Im not using a button, this is a button
 canvas.addEventListener('click', function() {
