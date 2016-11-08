@@ -37,7 +37,7 @@ window.setInterval(function(){
 
   {
 
-  enemies[i].x += math.random()*4;
+  enemies[].x += math.random()*4;
 
 }
 
@@ -63,7 +63,7 @@ window.setInterval(function(){
 
 {
 
-    ctx.fillRect(enemies[i].x,enemies[i].y,20,20);
+    ctx.fillRect(enemies[].x,enemies[].y,20,20);
 
   }
 
