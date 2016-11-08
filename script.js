@@ -13,11 +13,11 @@ var timer = 0;
 
 var enemies= {x:360, y:-240};
 
-
+function() {
 
   enemies.push({x:0, y:Math.random()*canvas.height});
 
-
+}
 
 
 
