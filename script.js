@@ -49,16 +49,16 @@ var enemies10 = [];
 
 window.setInterval(function(){  
  
-enemies1.push({x:+speed1, y:y});
- enemies2.push({x:+speed2, y:y});
-  enemies3.push({x:+speed3, y:y});
-  enemies4.push({x:+speed4, y:y});
- enemies5.push({x:+speed5, y:y});
-  enemies6.push({x:+speed6, y:y});
-  enemies7.push({x:+speed7, y:y});
- enemies8.push({x:+speed8, y:y});
- enemies9.push({x:+speed9, y:y});
- enemies10.push({x:+speed10, y:y});
+enemies1.push({x:+speed1, y:enemies1.y});
+ enemies2.push({x:+speed2, y:enemies2.y});
+  enemies3.push({x:+speed3, y:enemies3.y});
+  enemies4.push({x:+speed4, y:enemies4.y});
+ enemies5.push({x:+speed5, y:enemies5.y});
+  enemies6.push({x:+speed6, y:enemies6.y});
+  enemies7.push({x:+speed7, y:enemies7.y});
+ enemies8.push({x:+speed8, y:enemies8.y});
+ enemies9.push({x:+speed9, y:enemies9.y});
+ enemies10.push({x:+speed10, y:enemies10.y});
 
 //what does ctx mean
   //do I need .push
