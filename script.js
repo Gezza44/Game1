@@ -49,18 +49,18 @@ var enemies10 = [];
 
 window.setInterval(function(){  
  
-  enemies1.x += speed1;
-  enemies2.x += speed2;
-  enemies3.x += speed3;
-  enemies4.x += speed4;
-  enemies5.x += speed5;
-  enemies6.x += speed6;
-  enemies7.x += speed7;
-  enemies8.x += speed8;
-  enemies9.x += speed9;
-  enemies10.x += speed10;  
+  ctx.enemies1.x += speed1;
+  ctx.enemies2.x += speed2;
+  ctx.enemies3.x += speed3;
+  ctx.enemies4.x += speed4;
+  ctx.enemies5.x += speed5;
+  ctx.enemies6.x += speed6;
+  ctx.enemies7.x += speed7;
+  ctx.enemies8.x += speed8;
+  ctx.enemies9.x += speed9;
+  ctx.enemies10.x += speed10;  
 
-
+//what does ctx mean
  
   
 
@@ -68,7 +68,6 @@ window.setInterval(function(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "red";
   ctx.fillRect(mousePos.x-10,mousePos.y-10,20,20);
-  // ctx.fillRect(button.x,button.y, button.w, button.h);
   ctx.fillStyle = "black";
   ctx.fillText(Math.round(timer), canvas.width - 10, 30 );
   timer += 1/60;
@@ -97,17 +96,10 @@ canvas.addEventListener('mousemove', function(evt) {
     x: evt.clientX - rect.left,
     y: evt.clientY - rect.top
   };
-}, false); // "}" b4 "," bc chrome told me to
+}, false); 
+// what does this mean ^
 
-/* //Im not using a button, this is a button
-canvas.addEventListener('click', function() {
-  if (mousePos.x >= button.x && mousePos.x <= button.x + button.w) {
-    if (mousePos.y >= button.y && mousePos.y <= button.y + button.h ) {
-      console.log("Button CLicked");
-    }
-  }
-} );
-*/
+
 
 
 
