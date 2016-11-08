@@ -17,7 +17,7 @@ ctx.textAlign = "right";
 
 window.setInterval(function(){  
   for (var i=0; i<10; i++) {
-  enemies[i].x += math.random()*4;
+  enemies[i].x += Math.random()*4;
 }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "red";
