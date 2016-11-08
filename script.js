@@ -2,7 +2,7 @@
 var text= document.getElementById("text");
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-var mousePos = {x:0, y:0};
+var mousePos = {x:360, y:-240};
 var timer = 0;
 
 var enemies = [];
