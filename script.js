@@ -11,7 +11,7 @@ var timer = 0;
 
 
 
-var enemies
+var enemies= {x:360, y:-240};
 
 
 
