@@ -5,9 +5,9 @@ var text= document.getElementById("text");
  var timer = 0;
  
  var enemies = [];
- for (var i=0; i<10; i++) {
+
    enemies.push({x:Math.random()*100, y:Math.random()*100});
- }
+ 
  
  
 // var button = {x:20, y:30, w:80, h:40}; see line 26
